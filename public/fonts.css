@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-Bold.eot');
+  src: url('fonts/RiformaLLWeb-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-Bold.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-BoldItalic.eot');
+  src: url('fonts/RiformaLLWeb-BoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-BoldItalic.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-Italic.eot');
+  src: url('fonts/RiformaLLWeb-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-Italic.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-Light.eot');
+  src: url('fonts/RiformaLLWeb-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-Light.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-LightItalic.eot');
+  src: url('fonts/RiformaLLWeb-LightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-LightItalic.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-Medium.eot');
+  src: url('fonts/RiformaLLWeb-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-Medium.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-MediumItalic.eot');
+  src: url('fonts/RiformaLLWeb-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-MediumItalic.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  src: url('fonts/RiformaLLWeb-Regular.eot');
+  src: url('fonts/RiformaLLWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RiformaLLWeb-Regular.woff2') format('woff2'),
+    url('fonts/RiformaLLWeb-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
