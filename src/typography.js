@@ -97,6 +97,7 @@ export const ListLink = styled.a`
   :hover {
     color: ${props => props.theme.colors.buttonTextHover01};
   }
+
   ${typographyFunctions}
 `;
 ListLink.defaultProps = {
