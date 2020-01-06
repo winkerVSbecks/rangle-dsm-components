@@ -5,15 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "start-storybook -s ./public -p 6006",
+    "build-storybook": "build-storybook",
+    "dsm-storybook:publish": "dsm-storybook publish",
+    "dsm-storybook:preview": "dsm-storybook preview"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@invisionapp/dsm-storybook": "0.0.120",
+    "@storybook/addon-options": "^5.2.8",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
     "styled-components": "^4.4.1",
     "styled-system": "^5.1.4"
   },

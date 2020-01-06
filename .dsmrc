@@ -1,0 +1,7 @@
+{
+  "authToken": "HywbZAxl8",
+  "dsmHost": "rangle.invisionapp.com",
+  "organization": "rangle-io",
+  "outputDir": ".dsm",
+  "storyPath": "stories/**/*.stories.js"
+}

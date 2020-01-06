@@ -17,6 +17,7 @@ import { Box } from '../src/box';
 
 export default {
   title: 'Typography',
+  component: ExtraLargeHeading,
 };
 
 export const Headings = () => (
@@ -27,6 +28,23 @@ export const Headings = () => (
     <SmallHeading>Small Heading</SmallHeading>
   </>
 );
+
+export const ExtraLargeHeadingStory = () => (
+  <>
+    <ExtraLargeHeading>Extra Large Heading</ExtraLargeHeading>
+  </>
+);
+
+ExtraLargeHeadingStory.story = {
+  parameters: {
+    'in-dsm': {
+      component: ExtraLargeHeading,
+      componentPath: '../src/typography',
+      id: '5e1000d19ea961491514c913',
+      versionFilePath: '../version-file.json',
+    },
+  },
+};
 
 export const CTA = () => (
   <>
