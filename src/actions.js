@@ -25,7 +25,6 @@ export const PrimaryButton = styled.button`
   text-align: center;
   line-height: inherit;
   text-decoration: none;
-  padding: 20px 32px;
   border: none;
 
   color: ${props =>
@@ -46,10 +45,12 @@ export const PrimaryButton = styled.button`
   :focus {
     background-color: ${props => props.theme.colors.brand01};
     outline: 4px double ${props => props.theme.colors.brand01};
+    color: ${props => props.theme.colors.buttonText02};
   }
 
   :disabled {
     background-color: ${props => props.theme.colors.divider01};
+    color: ${props => props.theme.colors.buttonText02};
   }
 
   ${buttonFunctions}
@@ -57,9 +58,11 @@ export const PrimaryButton = styled.button`
 PrimaryButton.defaultProps = {
   fontFamily: 'riforma',
   fontWeight: 'medium',
-  lineHeight: 'solid',
+  lineHeight: 'xl',
   letterSpacing: 's',
   fontSize: [2, 2, 2, 3],
+  px: 4,
+  py: 20,
   width: ['100%', 'auto'],
 };
 
@@ -69,31 +72,37 @@ export const SecondaryButton = styled.button`
   text-align: center;
   line-height: inherit;
   text-decoration: none;
-  padding: 20px 32px;
-  border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: ${props =>
+    props.inverted
+      ? props.theme.colors.buttonText02
+      : props.theme.colors.buttonText01};
 
   color: ${props =>
     props.inverted
-      ? props.theme.colors.buttonText01
-      : props.theme.colors.buttonText02};
+      ? props.theme.colors.buttonText02
+      : props.theme.colors.buttonText01};
 
-  background-color: ${props =>
-    props.inverted
-      ? props.theme.colors.navigation01
-      : props.theme.colors.brand03};
+  background-color: transparent;
 
   :hover {
     background-color: ${props => props.theme.colors.brand01};
+    border-color: ${props => props.theme.colors.brand01};
     color: ${props => props.theme.colors.buttonText02};
   }
 
   :focus {
     background-color: ${props => props.theme.colors.brand01};
+    border-color: ${props => props.theme.colors.brand01};
     outline: 4px double ${props => props.theme.colors.brand01};
+    color: ${props => props.theme.colors.buttonText02};
   }
 
   :disabled {
     background-color: ${props => props.theme.colors.divider01};
+    color: ${props => props.theme.colors.buttonText02};
+    border-color: transparent;
   }
 
   ${buttonFunctions}
@@ -101,8 +110,10 @@ export const SecondaryButton = styled.button`
 SecondaryButton.defaultProps = {
   fontFamily: 'riforma',
   fontWeight: 'medium',
-  lineHeight: 'solid',
+  lineHeight: 'xl',
   letterSpacing: 's',
   fontSize: [2, 2, 2, 3],
+  px: 4,
+  py: 20,
   width: ['100%', 'auto'],
 };

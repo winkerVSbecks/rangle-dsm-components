@@ -16,3 +16,7 @@ export const Box = styled.div(
   },
   compose(space, color, layout, flexbox, border, position),
 );
+
+export const Flex = styled(Box)({
+  display: 'flex',
+});
