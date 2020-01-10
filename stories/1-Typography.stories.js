@@ -1,99 +1,126 @@
 import React from 'react';
-import {
-  ExtraLargeHeading,
-  LargeHeading,
-  MediumHeading,
-  SmallHeading,
-  LargeCTA,
-  SmallCTA,
-  ListLink,
-  Breadcrumb,
-  Caption,
-  Body,
-  EditorialText,
-  QuoteText,
-} from '../src/typography';
-import { Box } from '../src/box';
+import { Heading, CTA, Link, Text } from '../src/typography';
+import { Box, Flex } from '../src/box';
 
 export default {
   title: 'Typography',
-  component: ExtraLargeHeading,
 };
 
-export const Headings = () => (
+export const HeadingStory = () => (
   <>
-    <ExtraLargeHeading>Extra Large Heading</ExtraLargeHeading>
-    <LargeHeading>Large Heading</LargeHeading>
-    <MediumHeading>Medium Heading</MediumHeading>
-    <SmallHeading>Small Heading</SmallHeading>
+    <Heading type="extraLarge">Extra Large Heading</Heading>
+    <Heading type="large">Large Heading</Heading>
+    <Heading type="medium">Medium Heading</Heading>
+    <Heading type="small">Small Heading</Heading>
   </>
 );
 
-export const ExtraLargeHeadingStory = () => (
-  <>
-    <ExtraLargeHeading>Extra Large Heading</ExtraLargeHeading>
-  </>
-);
-
-ExtraLargeHeadingStory.story = {
+HeadingStory.story = {
+  name: 'Heading',
   parameters: {
     'in-dsm': {
-      component: ExtraLargeHeading,
+      component: Heading,
       componentPath: '../src/typography',
-      id: '5e1000d19ea961491514c913',
+      id: '',
       versionFilePath: '../version-file.json',
     },
   },
 };
 
-export const CTA = () => (
+export const CTAStory = () => (
+  <>
+    <Flex justifyContent="space-evenly" mb={4}>
+      <CTA type="large" href="#">
+        Large CTA →
+      </CTA>
+      <CTA type="large" href="#">
+        Large CTA ↗
+      </CTA>
+    </Flex>
+    <Flex justifyContent="space-evenly" mb={4}>
+      <CTA type="small" href="#">
+        Small CTA →
+      </CTA>
+
+      <CTA type="small" href="#">
+        Small CTA ↗
+      </CTA>
+    </Flex>
+  </>
+);
+
+CTAStory.story = {
+  name: 'CTA',
+  parameters: {
+    'in-dsm': {
+      component: CTA,
+      componentPath: '../src/typography',
+      id: '',
+      versionFilePath: '../version-file.json',
+    },
+  },
+};
+
+export const LinkStory = () => (
   <>
     <Box mb={4}>
-      <LargeCTA href="#">Large CTA →</LargeCTA>
+      <Text type="body">Body Copy</Text>
     </Box>
     <Box mb={4}>
-      <LargeCTA href="#">Large CTA ↗</LargeCTA>
-    </Box>
-    <Box mb={4}>
-      <SmallCTA href="#">Small CTA →</SmallCTA>
+      <Text type="editorial">Editorial Text</Text>
     </Box>
     <Box>
-      <SmallCTA href="#">Small CTA ↗</SmallCTA>
+      <Text type="quote">“Quote Text”</Text>
     </Box>
   </>
 );
 
-export const Links = () => (
+LinkStory.story = {
+  name: 'Link',
+  parameters: {
+    'in-dsm': {
+      component: Link,
+      componentPath: '../src/typography',
+      id: '',
+      versionFilePath: '../version-file.json',
+    },
+  },
+};
+
+export const ContentStory = () => (
   <>
     <Box mb={4}>
-      <ListLink href="#">List Link</ListLink>
+      <Link type="list" href="#">
+        List Link
+      </Link>
     </Box>
     <Box mb={4}>
-      <Breadcrumb href="#">Breadcrumb</Breadcrumb>
+      <Link type="breadcrumb" href="#">
+        Breadcrumb
+      </Link>
     </Box>
-    <Box mb={4}>
-      <Caption type="dark" href="#">
-        Caption Dark
-      </Caption>
-    </Box>
-    <Box>
-      <Caption type="light" href="#">
+    <Flex alignItems="center">
+      <Link type="captionLight" href="#">
         Caption Light
-      </Caption>
-    </Box>
+      </Link>
+
+      <Box width={200} />
+
+      <Link type="captionDark" href="#">
+        Caption Dark
+      </Link>
+    </Flex>
   </>
 );
 
-export const Content = () => (
-  <>
-    <Box mb={4}>
-      <Body>Body Copy</Body>
-    </Box>
-    <Box mb={4}>
-      <EditorialText>Editorial Text</EditorialText>
-    </Box>
-    <Box mb={4}>
-      <QuoteText>“Quote Text”</QuoteText>
-    </Box>
-  </>
-);
+ContentStory.story = {
+  name: 'Text',
+  parameters: {
+    'in-dsm': {
+      component: Text,
+      componentPath: '../src/typography',
+      id: '',
+      versionFilePath: '../version-file.json',
+    },
+  },
+};
